@@ -129,7 +129,7 @@ class Interface(ui_interface.QtWidgets.QMainWindow, ui_interface.Ui_MainWindow):
         self.setupUi(self)
         self.setWindowTitle('Записная книжка')
         self.table_widget = QTableWidget()
-        self.setCentralWidget(self.table_widget)
+        # self.setCentralWidget(self.table_widget)
 
     def create_db(self):
         with sqlite3.connect('database_phone.db') as connect:
